@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — ZinnStarter | SVCE @ SJSU</title>
+  <meta name="description" content="Photos from ZinnStarter events and Ray Zinn visits, plus video testimonials from program graduates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="main-nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">ZinnStarter</span>
+          <span class="nav__logo-sub">by SVCE @ SJSU</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="mentors.html">Mentors</a></li>
+          <li><a href="cohort.html">Cohort</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank" class="nav__apply">Apply Now</a></li>
+        </ul>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="program.html">Program</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="cohort.html">Cohort</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank" class="nav__apply">Apply Now</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero hero--sm">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">Photos &amp; Videos</div>
+        <h1>Gallery</h1>
+        <p>Photos from sessions, events, and Ray Zinn visits, plus video testimonials from ZinnStarter graduates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PHOTO GALLERY
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Event Photos</span>
+        <h2>From the Program</h2>
+        <p style="color: var(--gray);">To add photos: save image files to the <code>images/</code> folder, then replace each <code>&lt;div class="placeholder-img"&gt;</code> with an <code>&lt;img&gt;</code> tag and update the <code>data-caption</code> attribute. See README for full instructions.</p>
+      </div>
+
+      <div class="gallery-grid" id="photo-gallery">
+
+        <!-- =========================================================
+             GALLERY PHOTO — Duplicate this block to add more photos.
+
+             To replace a placeholder with a real photo:
+             1. Save your photo to the images/ folder
+             2. Replace the <div class="placeholder-img"> block with:
+                <img src="images/YOUR-PHOTO.jpg"
+                     alt="[PHOTO CAPTION]"
+                     class="gallery-item__img">
+             3. Update data-caption to match your photo description
+             4. Update data-src to the image path (for lightbox)
+             ========================================================= -->
+
+        <div class="gallery-item"
+             data-caption="[RAY ZINN VISIT — Final Showcase 2024]"
+             data-src="images/gallery-1.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-1.jpg<br>Ray Zinn Visit — Final Showcase</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[SESSION PHOTO — Cohort Meeting]"
+             data-src="images/gallery-2.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-2.jpg<br>Session — Cohort Meeting</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[TEAM PITCH — Final Showcase]"
+             data-src="images/gallery-3.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-3.jpg<br>Team Pitch — Final Showcase</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[RAY ZINN WITH TEAMS]"
+             data-src="images/gallery-4.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-4.jpg<br>Ray Zinn With Teams</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[MENTOR SESSION]"
+             data-src="images/gallery-5.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-5.jpg<br>Mentor Session</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[COHORT GROUP PHOTO]"
+             data-src="images/gallery-6.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-6.jpg<br>Cohort Group Photo</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[ELEVATOR PITCH SESSION]"
+             data-src="images/gallery-7.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-7.jpg<br>Elevator Pitch Session</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[FUNDING CEREMONY]"
+             data-src="images/gallery-8.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-8.jpg<br>Funding Ceremony</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[SVCE EVENT]"
+             data-src="images/gallery-9.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-9.jpg<br>SVCE Event</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[TEAM WORKSHOP]"
+             data-src="images/gallery-10.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-10.jpg<br>Team Workshop</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[BUSINESS PLAN COMPETITION]"
+             data-src="images/gallery-11.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-11.jpg<br>Business Plan Competition</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <div class="gallery-item"
+             data-caption="[RAY ZINN SPEAKING]"
+             data-src="images/gallery-12.jpg"
+             onclick="openLightbox(this)">
+          <div class="placeholder-img placeholder-img--wide" style="min-height: 200px; font-size: 0.75rem;">
+            [EVENT PHOTO]<br>
+            <span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/gallery-12.jpg<br>Ray Zinn Speaking</span>
+          </div>
+          <div class="gallery-item__overlay">&#128269;</div>
+        </div>
+
+        <!-- Add more gallery items above by copying one of the blocks -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VIDEO TESTIMONIALS
+       ============================================================ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Testimonials</span>
+        <h2>Hear From ZinnStarter Graduates</h2>
+        <p>Video testimonials recorded by program participants — and shared with Ray Zinn at the end of every cohort.</p>
+      </div>
+
+      <div class="video-grid">
+
+        <!-- =========================================================
+             VIDEO TESTIMONIAL — Duplicate this block to add more videos.
+
+             To replace a placeholder with a real YouTube video:
+             1. Get the YouTube video ID from the URL
+                (e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ, the ID is dQw4w9WgXcQ)
+             2. Replace the placeholder div with:
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID"
+                  title="[VIDEO TITLE]"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+             3. Update the caption below the embed
+             ========================================================= -->
+
+        <div class="video-card">
+          <div class="video-card__embed">
+            <!-- Replace this placeholder div with the YouTube iframe (see instructions above) -->
+            <div class="placeholder-img" style="width: 100%; height: 100%; aspect-ratio: 16/9; border-radius: 0; font-size: 0.75rem; flex-direction: column; gap: 0.5rem;">
+              <span style="font-size: 2rem;">▶</span>
+              [VIDEO TESTIMONIAL]<br>
+              <span style="font-weight: 400; font-size: 0.7rem; text-transform: none;">[TEAM NAME] — Replace with YouTube embed</span>
+            </div>
+          </div>
+          <div class="video-card__caption">[TEAM NAME] — [COHORT YEAR]</div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-card__embed">
+            <div class="placeholder-img" style="width: 100%; height: 100%; aspect-ratio: 16/9; border-radius: 0; font-size: 0.75rem; flex-direction: column; gap: 0.5rem;">
+              <span style="font-size: 2rem;">▶</span>
+              [VIDEO TESTIMONIAL]<br>
+              <span style="font-weight: 400; font-size: 0.7rem; text-transform: none;">[TEAM NAME] — Replace with YouTube embed</span>
+            </div>
+          </div>
+          <div class="video-card__caption">[TEAM NAME] — [COHORT YEAR]</div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-card__embed">
+            <div class="placeholder-img" style="width: 100%; height: 100%; aspect-ratio: 16/9; border-radius: 0; font-size: 0.75rem; flex-direction: column; gap: 0.5rem;">
+              <span style="font-size: 2rem;">▶</span>
+              [VIDEO TESTIMONIAL]<br>
+              <span style="font-weight: 400; font-size: 0.7rem; text-transform: none;">[TEAM NAME] — Replace with YouTube embed</span>
+            </div>
+          </div>
+          <div class="video-card__caption">[TEAM NAME] — [COHORT YEAR]</div>
+        </div>
+
+        <!-- Add more video cards above by copying one of the blocks -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LIGHTBOX OVERLAY
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" onclick="closeLightbox()">&times;</button>
+      <!-- Lightbox displays real images; placeholder slots do not open in lightbox -->
+      <img src="" alt="" class="lightbox__img" id="lightbox-img" />
+      <p id="lightbox-caption" style="text-align: center; color: #fff; margin-top: 0.75rem; font-size: 0.9rem;"></p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <span class="footer__logo-name">ZinnStarter</span>
+          <span class="footer__logo-sub">Silicon Valley Center for Entrepreneurship · SJSU</span>
+          <p class="footer__tagline">A student startup accelerator at San Jose State University, giving ambitious teams the funding, mentorship, and tools to build real companies.</p>
+          <span class="footer__funded">★ Funded by Ray Zinn</span>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="cohort.html">Cohort</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank">Apply Now ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <p>Program Manager<br><strong style="color: rgba(255,255,255,0.8);">Sriram Sridhar</strong></p>
+          <p><a href="mailto:sriram.sridhar@sjsu.edu?subject=ZinnStarter">sriram.sridhar@sjsu.edu</a><br><span style="font-size: 0.8rem; color: rgba(255,255,255,0.4);">Include "ZinnStarter" in subject</span></p>
+          <p style="margin-top: 1rem;"><a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank">SJSU Program Page ↗</a></p>
+          <p><a href="https://www.sjsu.edu/svce/" target="_blank">SVCE @ SJSU ↗</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Silicon Valley Center for Entrepreneurship, San Jose State University. All rights reserved.</span>
+        <span>ZinnStarter is funded by Ray Zinn.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

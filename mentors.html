@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentors — ZinnStarter | SVCE @ SJSU</title>
+  <meta name="description" content="Meet the Silicon Valley mentors who guide ZinnStarter teams through the accelerator program at SJSU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Mentor grid spacing */
+    .mentor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 900px) {
+      .mentor-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .mentor-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="main-nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">ZinnStarter</span>
+          <span class="nav__logo-sub">by SVCE @ SJSU</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="mentors.html" class="active">Mentors</a></li>
+          <li><a href="cohort.html">Cohort</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank" class="nav__apply">Apply Now</a></li>
+        </ul>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="program.html">Program</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="cohort.html">Cohort</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank" class="nav__apply">Apply Now</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero hero--sm">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">Silicon Valley Professionals</div>
+        <h1>Meet Our Mentors</h1>
+        <p>Every ZinnStarter team is paired with a dedicated mentor from the Silicon Valley startup and business community — someone who works alongside your team from day one through the final showcase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENTORSHIP MODEL
+       ============================================================ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid-3" style="text-align: center;">
+        <div class="card">
+          <div class="card__icon" style="margin: 0 auto 1rem;">🤝</div>
+          <h4>1-to-1 Pairing</h4>
+          <p>Every team is matched with one dedicated mentor. This is not a panel or a rotating speaker — it is a sustained relationship throughout the entire program.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon" style="margin: 0 auto 1rem;">🏙️</div>
+          <h4>Silicon Valley Practitioners</h4>
+          <p>Our mentors are active professionals — founders, executives, investors, and operators — who bring real-world perspective to your team's specific challenges.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon" style="margin: 0 auto 1rem;">🎯</div>
+          <h4>Goal-Oriented Guidance</h4>
+          <p>Mentors guide teams toward the final showcase with structured support on strategy, pitching, market thinking, and execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENTOR GRID
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Current Mentors</span>
+        <h2>The People Behind the Teams</h2>
+        <p>To update mentor profiles, edit the mentor cards below in mentors.html. See README for instructions.</p>
+      </div>
+
+      <div class="mentor-grid">
+
+        <!-- =========================================================
+             MENTOR CARD — Duplicate this block to add more mentors.
+             Replace all [BRACKETED PLACEHOLDERS] with real content.
+             Save mentor photos to the images/ folder.
+             ========================================================= -->
+
+        <div class="mentor-card">
+          <!-- Replace the div below with:
+               <img src="images/mentor-[name].jpg" alt="[MENTOR NAME]" class="mentor-card__photo"> -->
+          <div class="placeholder-img placeholder-img--square mentor-card__photo" style="border-radius: 0; font-size: 0.75rem;">
+            [MENTOR PHOTO]<br><span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/mentor-1.jpg</span>
+          </div>
+          <div class="mentor-card__body">
+            <div class="mentor-card__name">[MENTOR NAME]</div>
+            <div class="mentor-card__title">[TITLE], [COMPANY]</div>
+            <p class="mentor-card__bio">[MENTOR BIO — 2–3 sentences about their professional background, industry expertise, and what they bring to the teams they mentor.]</p>
+          </div>
+        </div>
+
+        <div class="mentor-card">
+          <div class="placeholder-img placeholder-img--square mentor-card__photo" style="border-radius: 0; font-size: 0.75rem;">
+            [MENTOR PHOTO]<br><span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/mentor-2.jpg</span>
+          </div>
+          <div class="mentor-card__body">
+            <div class="mentor-card__name">[MENTOR NAME]</div>
+            <div class="mentor-card__title">[TITLE], [COMPANY]</div>
+            <p class="mentor-card__bio">[MENTOR BIO — 2–3 sentences about their professional background, industry expertise, and what they bring to the teams they mentor.]</p>
+          </div>
+        </div>
+
+        <div class="mentor-card">
+          <div class="placeholder-img placeholder-img--square mentor-card__photo" style="border-radius: 0; font-size: 0.75rem;">
+            [MENTOR PHOTO]<br><span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/mentor-3.jpg</span>
+          </div>
+          <div class="mentor-card__body">
+            <div class="mentor-card__name">[MENTOR NAME]</div>
+            <div class="mentor-card__title">[TITLE], [COMPANY]</div>
+            <p class="mentor-card__bio">[MENTOR BIO — 2–3 sentences about their professional background, industry expertise, and what they bring to the teams they mentor.]</p>
+          </div>
+        </div>
+
+        <div class="mentor-card">
+          <div class="placeholder-img placeholder-img--square mentor-card__photo" style="border-radius: 0; font-size: 0.75rem;">
+            [MENTOR PHOTO]<br><span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/mentor-4.jpg</span>
+          </div>
+          <div class="mentor-card__body">
+            <div class="mentor-card__name">[MENTOR NAME]</div>
+            <div class="mentor-card__title">[TITLE], [COMPANY]</div>
+            <p class="mentor-card__bio">[MENTOR BIO — 2–3 sentences about their professional background, industry expertise, and what they bring to the teams they mentor.]</p>
+          </div>
+        </div>
+
+        <div class="mentor-card">
+          <div class="placeholder-img placeholder-img--square mentor-card__photo" style="border-radius: 0; font-size: 0.75rem;">
+            [MENTOR PHOTO]<br><span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/mentor-5.jpg</span>
+          </div>
+          <div class="mentor-card__body">
+            <div class="mentor-card__name">[MENTOR NAME]</div>
+            <div class="mentor-card__title">[TITLE], [COMPANY]</div>
+            <p class="mentor-card__bio">[MENTOR BIO — 2–3 sentences about their professional background, industry expertise, and what they bring to the teams they mentor.]</p>
+          </div>
+        </div>
+
+        <div class="mentor-card">
+          <div class="placeholder-img placeholder-img--square mentor-card__photo" style="border-radius: 0; font-size: 0.75rem;">
+            [MENTOR PHOTO]<br><span style="font-weight: 400; font-size: 0.7rem; text-transform: none; margin-top: 4px; display: block;">images/mentor-6.jpg</span>
+          </div>
+          <div class="mentor-card__body">
+            <div class="mentor-card__name">[MENTOR NAME]</div>
+            <div class="mentor-card__title">[TITLE], [COMPANY]</div>
+            <p class="mentor-card__bio">[MENTOR BIO — 2–3 sentences about their professional background, industry expertise, and what they bring to the teams they mentor.]</p>
+          </div>
+        </div>
+
+        <!-- Add more mentor cards here by copying one of the blocks above -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BECOME A MENTOR CTA
+       ============================================================ -->
+  <section class="section section--dark">
+    <div class="container" style="text-align: center;">
+      <span class="label" style="color: var(--gold);">Get Involved</span>
+      <h2 style="margin-bottom: 0.75rem;">Interested in Becoming a ZinnStarter Mentor?</h2>
+      <p style="max-width: 540px; margin: 0 auto 2rem; color: rgba(255,255,255,0.75);">We are always looking for experienced Silicon Valley professionals who want to give back by guiding the next generation of student founders.</p>
+      <a href="mailto:sriram.sridhar@sjsu.edu?subject=ZinnStarter Mentor Interest" class="btn btn-gold btn-lg">Reach Out to Sriram</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <span class="footer__logo-name">ZinnStarter</span>
+          <span class="footer__logo-sub">Silicon Valley Center for Entrepreneurship · SJSU</span>
+          <p class="footer__tagline">A student startup accelerator at San Jose State University, giving ambitious teams the funding, mentorship, and tools to build real companies.</p>
+          <span class="footer__funded">★ Funded by Ray Zinn</span>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="cohort.html">Cohort</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank">Apply Now ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <p>Program Manager<br><strong style="color: rgba(255,255,255,0.8);">Sriram Sridhar</strong></p>
+          <p><a href="mailto:sriram.sridhar@sjsu.edu?subject=ZinnStarter">sriram.sridhar@sjsu.edu</a><br><span style="font-size: 0.8rem; color: rgba(255,255,255,0.4);">Include "ZinnStarter" in subject</span></p>
+          <p style="margin-top: 1rem;"><a href="https://www.sjsu.edu/svce/programs/zinnstarter.php" target="_blank">SJSU Program Page ↗</a></p>
+          <p><a href="https://www.sjsu.edu/svce/" target="_blank">SVCE @ SJSU ↗</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Silicon Valley Center for Entrepreneurship, San Jose State University. All rights reserved.</span>
+        <span>ZinnStarter is funded by Ray Zinn.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

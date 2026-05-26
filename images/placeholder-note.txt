@@ -1,0 +1,42 @@
+ZINNSTARTER — IMAGES FOLDER
+============================
+
+Drop your images into this folder and update the HTML files to reference them.
+
+HOW TO REPLACE A PLACEHOLDER IMAGE:
+-------------------------------------
+1. Save your image file here (e.g. ray-zinn.jpg, mentor-john.jpg, gallery-1.jpg)
+2. Open the relevant HTML file in a text editor
+3. Find the <div class="placeholder-img ..."> block you want to replace
+4. Replace the entire <div> block with an <img> tag, like this:
+
+   BEFORE (placeholder):
+   <div class="placeholder-img placeholder-img--square ...">
+     [RAY ZINN PHOTO]
+   </div>
+
+   AFTER (real photo):
+   <img src="images/ray-zinn.jpg" alt="Ray Zinn, Founder of ZinnStarter" class="...same classes as the div had...">
+
+5. Save the HTML file. That's it.
+
+NAMING SUGGESTIONS:
+--------------------
+Ray Zinn photo:        images/ray-zinn.jpg
+Mentor photos:         images/mentor-[firstname-lastname].jpg
+Team logos:            images/team-[teamname]-logo.png
+Gallery photos:        images/gallery-1.jpg, gallery-2.jpg, etc.
+Session photos:        images/session-photo.jpg
+Hero background:       images/hero-bg.jpg  (optional — set as CSS background-image in styles.css)
+
+RECOMMENDED IMAGE SIZES:
+--------------------------
+Ray Zinn / mentor headshots:  500×500px minimum (square, displays at 280px wide)
+Team logos:                   200×200px minimum (square)
+Gallery photos:               1200×800px recommended (landscape)
+Video thumbnails:             1280×720px (16:9, but only needed if not using YouTube)
+
+FILE FORMATS:
+--------------
+Photos:  .jpg (best for photos, smaller file size)
+Logos:   .png (supports transparency) or .svg (for vector logos)
