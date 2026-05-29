@@ -610,6 +610,28 @@ p {
   margin-bottom: 0.75rem;
 }
 
+.team-card__founder {
+  font-size: 0.9rem;
+  color: var(--blue);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+.team-card__founder::before {
+  content: "Founder · ";
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.team-card__major {
+  font-size: 0.8rem;
+  color: var(--gray);
+  font-weight: 400;
+  margin-bottom: 0.85rem;
+}
+
 .team-card__desc {
   font-size: 0.9rem;
   color: var(--gray);
