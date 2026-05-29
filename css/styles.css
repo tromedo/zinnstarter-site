@@ -715,6 +715,19 @@ p {
   line-height: 1.6;
 }
 
+.alumni-card__link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.alumni-card__link:hover {
+  text-decoration: underline;
+}
+
 /* -------------------------------------------------------------
    13. Gallery
    ------------------------------------------------------------- */
